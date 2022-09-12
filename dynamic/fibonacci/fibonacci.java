@@ -6,6 +6,7 @@ public class fibonacci{
         for(i=1; i<count; i++)
         {
             a3= a1+a2;
+            System.out.println(""+ a3);
             a1= a2;
             a2=a3;   
         }

@@ -1,25 +1,36 @@
-public class calculator{
-    int a, b;
-    void getdata(int m, int n){
-        a= m;
-        b= n;
+class maincalculate{
+    static double result;
+    static double num1, num2;
+    maincalculate(int a, int b)
+    {
+        num1= a;
+        num2= b;
+        result= 0;
+    }
+    static void print(){
+        System.out.println("The values areL: "+num1+ "and" +num2);
+        
+    }
+    static double add(){
+        return num1+ num2;
+    }
+    static double difference(){
+        return num1-num2;
+    }
+    static double multiplication(){
+        return num1*num2;
+    }
+     static double devide(){
+        return num1/ num2;
     }
 }
-void adition(){
-    System.out.println(a+"+"+b+"="+(a+b));
-void substraction()
-    System.out.println(a+"-"+b+"="+(a-b));
-} 
-void multiplication(){
-    System.out.println(a+"*"+b+"="+(a*b));
-}
-void divition(){
-    System.out.println(a+"/"+b+"="+(a/b));
-}
-
-public class functions(){
-    public static void main(String args[]){
-        calculator.a1= new calculaotr(5, 8);
-        a1.substraction()
+class calculator{
+    public static void main(String[] args){
+        maincalculate obj= new maincalculate(10 , 5);
+        maincalculate.print();
+        System.out.println("The sum is : "+maincalculate.add());
+        System.out.println("The multiplication is : "+maincalculate.multiplication());
+        System.out.println("The difference is : "+maincalculate.difference());
+        System.out.println("The device is : "+maincalculate.devide());
     }
 }
